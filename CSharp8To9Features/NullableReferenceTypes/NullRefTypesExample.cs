@@ -1,7 +1,7 @@
 ﻿// global at csproj: <nullable>enable/warning/annotations</nullable> (выбрать одно) at <PropertyGroup> section
 //#nullable enable warnings          // включает предупреждения о потенциальных NRE
 //#nullable enable annotations       // активирует определение ref types с атрибутом '?'
-#nullable enable                     // == warnings + annotations            
+#nullable enable                     // == warnings + annotations       
 
 namespace CSharp8To9Features.NullableReferenceTypes
 {
@@ -47,7 +47,7 @@ namespace CSharp8To9Features.NullableReferenceTypes
             }
         }
 
-        #region Library Nullable Attributes
+        #region Nullable Attributes примеры использования
 
         // когда возвращаемое значение == true, object result также не будет null
         public static bool TryGetValue1(string str, [NotNullWhen(true)] out object result) { result = 1; return true; }
@@ -118,3 +118,5 @@ namespace CSharp8To9Features.NullableReferenceTypes
         #endregion
     }
 }
+
+#nullable restore                    // отмена nullable фичи, помещается в конце блока кода
