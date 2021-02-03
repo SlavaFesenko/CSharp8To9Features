@@ -1,4 +1,4 @@
-﻿using CSharp8To9Features.NullableReferenceTypes;
+﻿using CSharp8To9Features.DifferentExpressions;
 using System;
 
 namespace CSharp8To9Features
@@ -7,9 +7,8 @@ namespace CSharp8To9Features
     {
         static void Main(string[] args)
         {
-            NullRefTypesExample.DoStuff();
-
-            Console.WriteLine("Hello World!");
+            //CSharp8To9Features.NullableReferenceTypes.NullRefTypesExample.DoStuff();
+            NullCoOperators.DoStuff();
         }
     }
 }
