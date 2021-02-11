@@ -8,7 +8,9 @@ namespace CSharp8To9Features
         static void Main(string[] args)
         {
             //CSharp8To9Features.NullableReferenceTypes.NullRefTypesExample.DoStuff();
-            NullCoOperators.DoStuff();
+            //NullCoOperators.DoStuff();
+            //StaticLocalFunctionsExample.DoStuff();
+            LambdaDiscardsExample.DoStuff();
         }
     }
 }
