@@ -1,10 +1,12 @@
-﻿namespace CSharp8To9Features
+﻿using CSharp8To9Features.IndexesRanges;
+
+namespace CSharp8To9Features
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //AsyncSequencesExample.DoStuff();
+            IndexRangeExamples.DoStuff();
 
         }
 
