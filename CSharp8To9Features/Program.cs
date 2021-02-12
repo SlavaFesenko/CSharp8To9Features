@@ -1,16 +1,16 @@
-﻿using CSharp8To9Features.DifferentExpressions;
-using System;
-
-namespace CSharp8To9Features
+﻿namespace CSharp8To9Features
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //CSharp8To9Features.NullableReferenceTypes.NullRefTypesExample.DoStuff();
-            //NullCoOperators.DoStuff();
-            //StaticLocalFunctionsExample.DoStuff();
-            LambdaDiscardsExample.DoStuff();
+            //AsyncSequencesExample.DoStuff();
+
         }
+
+        //static async System.Threading.Tasks.Task Main(string[] args)
+        //{
+        //    await AsSeqGetEnumeratorForeach.GetEnumeratorForeach.DoStuffAsync();
+        //}
     }
 }
