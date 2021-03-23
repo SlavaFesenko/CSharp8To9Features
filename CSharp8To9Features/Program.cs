@@ -1,5 +1,6 @@
 ﻿using CSharp8To9Features.IndexesRanges;
 using CSharp8To9Features.PatternMatchingSwitchExpressions;
+using CSharp8To9Features.RecordsStuff;
 
 namespace CSharp8To9Features
 {
@@ -8,8 +9,8 @@ namespace CSharp8To9Features
         static void Main(string[] args)
         {
             //IndexRangeExamples.DoStuff();
-            PatternMatchingExamples.Execute();
-            //FizzAndBuzz.Solve();
+            //PatternMatchingExamples.Execute();
+            RecordsExample.Show();
         }
 
         //static async System.Threading.Tasks.Task Main(string[] args)

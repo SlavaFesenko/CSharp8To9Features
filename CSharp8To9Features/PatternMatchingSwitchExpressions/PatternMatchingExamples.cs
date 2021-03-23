@@ -46,12 +46,13 @@ namespace CSharp8To9Features.PatternMatchingSwitchExpressions
             // previously: 
             if (!(shape is null)) { } // shape != null явно читабельнее
             // same as
-            if (shape2 is { }) { } // такой формат записи точно издевательства, ладно еще для switch
+            if (shape2 is { }) { } // такой формат записи точно издевательство, ладно еще для switch
 
-            if (shape3 is not null and Circle { Radius: not 0 }) //
+            if (shape3 is not null and Circle { Radius: not 0 }) { } // излишний код, лучше как ниже
+            if (shape3 is Circle { Radius: not 0 and var rad}) // var rad взят только для примера
             {
                 // shape is not null here
-                Console.WriteLine($"Radius: {shape3.Radius}");
+                Console.WriteLine($"Radius: {shape3.Radius} or {rad}");
             }
 
             // === Combo patterns
@@ -65,7 +66,8 @@ namespace CSharp8To9Features.PatternMatchingSwitchExpressions
             object shape4 = new Rectangle() { Length = 1D, Height = 2D };
 
             // type pattern + positional pattern + relational + var pattern + recursive pattern + co
-            if (shape4 is Rectangle(>= 1d, var height)) // это уже перебор, с {} и явным Height: лучше
+            // тут нужно знать про неявно используемый метод .Deconstruct(out double length, out double height)
+            if (shape4 is Rectangle(>= 1d, var height))
             {
                 Console.WriteLine("pattern combinators - v2: " + height);
             }
