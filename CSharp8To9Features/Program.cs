@@ -9,15 +9,19 @@ namespace CSharp8To9Features
     {
         static void Main(string[] args)
         {
-            //IndexRangeExamples.DoStuff();
-            //PatternMatchingExamples.Execute();
-            RecordsExample.Show();
-            CodeGeneratorPresenter.Present();
+
         }
 
-        //static async System.Threading.Tasks.Task Main(string[] args)
-        //{
-        //    await AsSeqGetEnumeratorForeach.GetEnumeratorForeach.DoStuffAsync();
-        //}
+        [System.Runtime.CompilerServices.ModuleInitializer]
+        internal static void RunBeforeMain()
+        {
+
+        }
+
+        [System.Runtime.CompilerServices.ModuleInitializer]
+        internal static void RunBeforeMain2()
+        {
+
+        }
     }
 }
