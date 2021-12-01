@@ -49,6 +49,8 @@ namespace CSharp8To9Features.NullableReferenceTypes
 
         #region Nullable Attributes примеры использования
 
+        // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/attributes/nullable-analysis
+
         // гарантировать для компилятора, что значение метода расширения not null
         // обратить внимание на предупреждение компилятора, если по факту не гарантировать non-null
         public static bool ExtMethod([NotNull] this string? str) { return true; }
